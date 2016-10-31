@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="3" result="Failed" total="3" passed="0" failed="3" inconclusive="0" skipped="0" asserts="0" engine-version="3.4.1.0" clr-version="4.0.30319.42000" start-time="2016-10-31 09:48:21Z" end-time="2016-10-31 09:49:19Z" duration="58.118980">
+  <command-line><![CDATA[C:\"Program Files (x86)"\NUnit.org\nunit-console\nunit3-console.exe  TestGmail.dll]]></command-line>
+  <test-suite type="Assembly" id="0-1004" name="TestGmail.dll" fullname="C:\Users\Siarhei_Hulkou\Documents\Visual Studio 2015\Projects\TestGmail\TestGmail\bin\Debug\TestGmail.dll" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2016-10-31 09:48:21Z" end-time="2016-10-31 09:49:19Z" duration="58.083136" total="3" passed="0" failed="3" inconclusive="0" skipped="0" asserts="0">
+    <environment framework-version="3.5.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.14393.0" platform="Win32NT" cwd="C:\Users\Siarhei_Hulkou\Documents\Visual Studio 2015\Projects\TestGmail\TestGmail\bin\Debug" machine-name="EPBYMINW6461" user="Siarhei_Hulkou" user-domain="MINSK" culture="en-US" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="WorkDirectory" value="C:\Users\Siarhei_Hulkou\Documents\Visual Studio 2015\Projects\TestGmail\TestGmail\bin\Debug" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.5.2" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="4" />
+    </settings>
+    <properties>
+      <property name="_PID" value="11312" />
+      <property name="_APPDOMAIN" value="test-domain-" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="0-1005" name="TestGmail" fullname="TestGmail" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2016-10-31 09:48:21Z" end-time="2016-10-31 09:49:19Z" duration="58.064632" total="3" passed="0" failed="3" inconclusive="0" skipped="0" asserts="0">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="0-1000" name="TestClass" fullname="TestGmail.TestClass" classname="TestGmail.TestClass" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2016-10-31 09:48:21Z" end-time="2016-10-31 09:49:19Z" duration="58.059791" total="3" passed="0" failed="3" inconclusive="0" skipped="0" asserts="0">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="0-1002" name="TestDeleteSentMessage" fullname="TestGmail.TestClass.TestDeleteSentMessage" methodname="TestDeleteSentMessage" classname="TestGmail.TestClass" runstate="Runnable" seed="622608497" result="Failed" label="Error" start-time="2016-10-31 09:48:21Z" end-time="2016-10-31 09:48:42Z" duration="20.190998" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.WebDriverTimeoutException : Timed out after 5 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #Passwd]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   at TestGmail.Pages.SignInPage.get_PasswordInput() in C:\Users\Siarhei_Hulkou\documents\visual studio 2015\Projects\TestGmail\TestGmail\WebDriver\Pages\SignInPage.cs:line 36
+   at TestGmail.Pages.SignInPage.SignIn(User user) in C:\Users\Siarhei_Hulkou\documents\visual studio 2015\Projects\TestGmail\TestGmail\WebDriver\Pages\SignInPage.cs:line 54
+   at TestGmail.TestClass.TestDeleteSentMessage() in C:\Users\Siarhei_Hulkou\documents\visual studio 2015\Projects\TestGmail\TestGmail\WebDriver\Tests\TestClass.cs:line 59
+--NoSuchElementException
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Support.UI.ExpectedConditions.<>c__DisplayClass13.<ElementIsVisible>b__12(IWebDriver driver)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1001" name="TestDraftAndSendMessage" fullname="TestGmail.TestClass.TestDraftAndSendMessage" methodname="TestDraftAndSendMessage" classname="TestGmail.TestClass" runstate="Runnable" seed="1558817284" result="Failed" label="Error" start-time="2016-10-31 09:48:42Z" end-time="2016-10-31 09:49:02Z" duration="19.982672" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.WebDriverTimeoutException : Timed out after 5 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #Passwd]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   at TestGmail.Pages.SignInPage.get_PasswordInput() in C:\Users\Siarhei_Hulkou\documents\visual studio 2015\Projects\TestGmail\TestGmail\WebDriver\Pages\SignInPage.cs:line 36
+   at TestGmail.Pages.SignInPage.SignIn(User user) in C:\Users\Siarhei_Hulkou\documents\visual studio 2015\Projects\TestGmail\TestGmail\WebDriver\Pages\SignInPage.cs:line 54
+   at TestGmail.TestClass.TestDraftAndSendMessage() in C:\Users\Siarhei_Hulkou\documents\visual studio 2015\Projects\TestGmail\TestGmail\WebDriver\Tests\TestClass.cs:line 39
+--NoSuchElementException
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Support.UI.ExpectedConditions.<>c__DisplayClass13.<ElementIsVisible>b__12(IWebDriver driver)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="0-1003" name="TestFindingElements" fullname="TestGmail.TestClass.TestFindingElements" methodname="TestFindingElements" classname="TestGmail.TestClass" runstate="Runnable" seed="1681530428" result="Failed" label="Error" start-time="2016-10-31 09:49:02Z" end-time="2016-10-31 09:49:19Z" duration="17.868292" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.WebDriverTimeoutException : Timed out after 5 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to locate element: #Passwd]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   at TestGmail.Pages.SignInPage.get_PasswordInput() in C:\Users\Siarhei_Hulkou\documents\visual studio 2015\Projects\TestGmail\TestGmail\WebDriver\Pages\SignInPage.cs:line 36
+   at TestGmail.Pages.SignInPage.SignIn(User user) in C:\Users\Siarhei_Hulkou\documents\visual studio 2015\Projects\TestGmail\TestGmail\WebDriver\Pages\SignInPage.cs:line 54
+   at TestGmail.TestClass.TestFindingElements() in C:\Users\Siarhei_Hulkou\documents\visual studio 2015\Projects\TestGmail\TestGmail\WebDriver\Tests\TestClass.cs:line 71
+--NoSuchElementException
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Support.UI.ExpectedConditions.<>c__DisplayClass13.<ElementIsVisible>b__12(IWebDriver driver)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)]]></stack-trace>
+          </failure>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
