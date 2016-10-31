@@ -33,16 +33,16 @@ namespace TestGmail
         [Test]
         public void TestDraftAndSendMessage()
         {
-            StartPage startPage = new StartPage(driver);
-            startPage.OpenUrl();
-            SignInPage signInPage = startPage.OpenSignInPage();
-            /*HomePage homePage = signInPage.SignIn(Properties.user);
+            //StartPage startPage = new StartPage(driver);
+            //startPage.OpenUrl();
+            SignInPage signInPage = new SignInPage(driver);
+            HomePage homePage = signInPage.SignIn(Properties.user);
             NewLetterForm newLetterForm = homePage.SubmitWriteButton();
             newLetterForm.CreateLetterInDraft(Properties.message);
             homePage.SubmitDraft();
 
             homePage.SendLetter();
-            homePage.Exit();*/
+            homePage.Exit();
         }
 
 

@@ -31,6 +31,5 @@ D:\GitGmail\GmailTest\TestGmail\TestGmail\bin\Debug\WebDriver.Support.dll
 D:\GitGmail\GmailTest\TestGmail\TestGmail\bin\Debug\nunit.framework.xml
 D:\GitGmail\GmailTest\TestGmail\TestGmail\bin\Debug\WebDriver.xml
 D:\GitGmail\GmailTest\TestGmail\TestGmail\bin\Debug\WebDriver.Support.xml
-D:\GitGmail\GmailTest\TestGmail\TestGmail\obj\Debug\TestGmail.csprojResolveAssemblyReference.cache
 D:\GitGmail\GmailTest\TestGmail\TestGmail\obj\Debug\TestGmail.dll
 D:\GitGmail\GmailTest\TestGmail\TestGmail\obj\Debug\TestGmail.pdb

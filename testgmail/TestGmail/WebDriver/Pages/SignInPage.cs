@@ -24,6 +24,7 @@ namespace TestGmail.Pages
         {
             this.driver = driver;
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(5));
+            driver.Navigate().GoToUrl("https://accounts.google.com/AccountChooser?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&hl=en&service=mail&scc=1");
         }
 
         public IWebElement LoginInput
