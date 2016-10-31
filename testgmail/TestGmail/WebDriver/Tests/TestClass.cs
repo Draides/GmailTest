@@ -36,13 +36,13 @@ namespace TestGmail
             StartPage startPage = new StartPage(driver);
             startPage.OpenUrl();
             SignInPage signInPage = startPage.OpenSignInPage();
-            HomePage homePage = signInPage.SignIn(Properties.user);
+            /*HomePage homePage = signInPage.SignIn(Properties.user);
             NewLetterForm newLetterForm = homePage.SubmitWriteButton();
             newLetterForm.CreateLetterInDraft(Properties.message);
             homePage.SubmitDraft();
 
             homePage.SendLetter();
-            homePage.Exit();
+            homePage.Exit();*/
         }
 
 
@@ -50,7 +50,7 @@ namespace TestGmail
 
 
 
-        [Test]
+       /* [Test]
         public void TestDeleteSentMessage()
         {
             StartPage startPage = new StartPage(driver);
@@ -80,6 +80,6 @@ namespace TestGmail
             element.Click();
             Thread.Sleep(4000);
 
-        } 
+        } */
     }
 }
